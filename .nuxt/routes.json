@@ -1,0 +1,16 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/home/david/Projects/polarination/polarination-webapp/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_99baf38e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/david/Projects/polarination/polarination-webapp/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5a4b3e04"
+  }
+]
