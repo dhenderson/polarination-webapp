@@ -29,10 +29,12 @@ export default {
 <style scoped>
 .article-headline {
     font-weight: bold;
-    color: #333;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding-bottom: 5px;
+    color: #333;
 }
+.article-headline a {color: #333}
+.article-headline a:visted {color: #333}
 .article-date {
     font-style: italic;
     font-size: 0.8em;

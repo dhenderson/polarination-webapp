@@ -5,6 +5,7 @@
 $background: #FFF;
 $poli-right: #c61e15;
 $poli-left: #172556;
+$link: #C09724;
 $primary: #333;
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
@@ -25,7 +26,6 @@ $colors: (
 );
 
 // Links
-$link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
@@ -36,6 +36,10 @@ $link-focus-border: $primary;
 html {
     background-color: $background;
 }
+
+p a {color: $link; font-weight: bold;}
+p a:hover {color: $link;}
+p a:visted {color: $link;}
 
 .background-color-left {
     background-color: $poli-left;
