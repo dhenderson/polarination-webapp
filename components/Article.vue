@@ -31,10 +31,7 @@ export default {
     font-weight: bold;
     font-size: 1.1em;
     padding-bottom: 5px;
-    color: #333;
 }
-.article-headline a {color: #333}
-.article-headline a:visted {color: #333}
 .article-date {
     font-style: italic;
     font-size: 0.8em;

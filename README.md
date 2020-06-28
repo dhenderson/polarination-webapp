@@ -1,4 +1,4 @@
-# polarnews
+# Polarination Webapp
 
 ## Build Setup
 
@@ -18,3 +18,9 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Deploy to s3
+
+```bash
+$ aws s3 sync dist/ s3://polarination-webapp
+ ```
