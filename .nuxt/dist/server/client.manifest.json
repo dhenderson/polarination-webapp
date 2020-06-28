@@ -3,24 +3,24 @@
   "all": [
     "../server/index.spa.html",
     "LICENSES",
-    "app.820e87f.js",
-    "commons.app.054e2ac.js",
+    "app.f1bc881.js",
+    "commons.app.cf92632.js",
     "img/cnn.be9cd04.png",
     "img/fox_news.b598fc3.png",
-    "pages/about.4fcdb4e.js",
-    "pages/index.94c87d4.js",
-    "runtime.d6773e4.js",
-    "vendors.app.e924259.js"
+    "pages/about.0332f5e.js",
+    "pages/index.a0d37c7.js",
+    "runtime.30bd426.js",
+    "vendors.app.7c3f95d.js"
   ],
   "initial": [
-    "runtime.d6773e4.js",
-    "commons.app.054e2ac.js",
-    "vendors.app.e924259.js",
-    "app.820e87f.js"
+    "runtime.30bd426.js",
+    "commons.app.cf92632.js",
+    "vendors.app.7c3f95d.js",
+    "app.f1bc881.js"
   ],
   "async": [
-    "pages/about.4fcdb4e.js",
-    "pages/index.94c87d4.js"
+    "pages/about.0332f5e.js",
+    "pages/index.a0d37c7.js"
   ],
   "modules": {
     "13479415": [
@@ -170,6 +170,9 @@
     "3809d7ca": [
       3
     ],
+    "534d6c27": [
+      3
+    ],
     "f22cbe5c": [
       3
     ],
@@ -198,9 +201,6 @@
       3
     ],
     "6e4e9c80": [
-      3
-    ],
-    "534d6c27": [
       3
     ],
     "1154eed8": [
@@ -841,13 +841,13 @@
     ],
     "3904a8ca": [
       7,
-      4,
-      5
+      5,
+      4
     ],
-    "31b81609": [
+    "acab5792": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "6b7c88a3": [
       6
@@ -855,85 +855,110 @@
     "1745635a": [
       6
     ],
-    "1166bbca": [
-      7,
-      4,
-      5
-    ],
     "5f18a4d2": [
       7,
-      4,
-      5
+      5,
+      4
+    ],
+    "1166bbca": [
+      7,
+      5,
+      4
     ],
     "1ddce2f6": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "5e8802d5": [
       7,
-      4,
-      5
+      5,
+      4
     ],
-    "7dd3465f": [
+    "64c9ad21": [
       7,
-      4,
-      5
+      5,
+      4
     ],
-    "06b40c0f": [
+    "53eed171": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "070c87e5": [
       7,
-      4,
-      5
+      5,
+      4
     ],
-    "00e11d90": [
+    "7c69e20e": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "e248c562": [
       7,
-      4,
-      5
+      5,
+      4
     ],
-    "59a41c8c": [
+    "8cf7b590": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "5e7f2df6": [
       7,
-      4,
-      5
+      5,
+      4
+    ],
+    "2d077c89": [
+      7,
+      5,
+      4
+    ],
+    "5632c0b4": [
+      7,
+      5,
+      4
+    ],
+    "178dd4ad": [
+      7,
+      5,
+      4
+    ],
+    "1fdc596c": [
+      7,
+      5,
+      4
+    ],
+    "59cd6637": [
+      7,
+      5,
+      4
     ],
     "9e333ba2": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "092c3a78": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "e12c5272": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "8090294c": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "e49edb5e": [
       7,
-      4,
-      5
+      5,
+      4
     ],
     "3156a5c0": [
       6
@@ -947,22 +972,22 @@
   },
   "assetsMapping": {
     "1a3ae26b": [
-      "app.820e87f.js"
+      "app.f1bc881.js"
     ],
     "0859c165": [
-      "commons.app.054e2ac.js"
+      "commons.app.cf92632.js"
     ],
     "2aff1868": [
-      "pages/about.4fcdb4e.js"
+      "pages/about.0332f5e.js"
     ],
     "2a130dde": [
-      "pages/index.94c87d4.js"
+      "pages/index.a0d37c7.js"
     ],
     "6fca0322": [
-      "runtime.d6773e4.js"
+      "runtime.30bd426.js"
     ],
     "7ea1d828": [
-      "vendors.app.e924259.js"
+      "vendors.app.7c3f95d.js"
     ]
   }
 }

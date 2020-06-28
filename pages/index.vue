@@ -1,30 +1,45 @@
 <template>
-  <div class="columns">
-    <div class="column box background-color-left">
-      <figure class="image is-64x64 news-source-logo-container">
-        <img class="is-rounded" src="~/assets/images/cnn.png"/>
-      </figure>
-      <Article v-for="article in left" :key="article.url" :article="article" class="box" />
-    </div>
-    <div class="column box background-color-right">
-      <figure class="image is-64x64 news-source-logo-container">
-          <img class="is-rounded" src="~/assets/images/fox_news.png"/>
-      </figure>
-      <Article v-for="article in right" :key="article.url" :article="article" class="box" />
+  <div>
+    <template v-if="screenWidth < 770">
+      <b-tabs position="is-centered" class="block">
+        <b-tab-item label="🐴 Left" class="background-color-left">
+
+          <div class="box background-color-left">
+            <ArticleIdeology ideology="left" :articles="left" />
+          </div>
+
+        </b-tab-item>
+        <b-tab-item label="Right 🐘">
+
+          <div class="box background-color-right">
+            <ArticleIdeology ideology="right" :articles="right" />
+          </div>
+
+        </b-tab-item>
+      </b-tabs>
+    </template>
+    <div class="columns" v-else>
+      <div class="column box background-color-left">
+        <ArticleIdeology ideology="left" :articles="left" />
+      </div>
+      <div class="column box background-color-right">
+        <ArticleIdeology ideology="right" :articles="right" />
+      </div>
     </div>
   </div>
 </template>
 <script>
-import Article from "~/components/Article.vue"
+import ArticleIdeology from "~/components/ArticleIdeology.vue"
 
 export default {
   components: {
-    Article
+    ArticleIdeology
   },
   data () {
     return {
       left: null,
-      right: null
+      right: null,
+      screenWidth: null
     }
   },
   methods: {
@@ -38,13 +53,11 @@ export default {
     }
   },
   mounted () {
+    this.screenWidth = window.innerWidth
     this.getNews()
+    window.addEventListener('resize', e => {
+      this.screenWidth = window.innerWidth
+    });
   }
 }
 </script>
-<style scoped>
-.news-source-logo-container {
-  display: block;
-  margin: 25px auto;
-}
-</style>
