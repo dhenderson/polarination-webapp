@@ -2,15 +2,15 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "/home/david/Projects/polarination/polarination-webapp/pages/about.vue",
+    "component": "/Users/david/Projects/polarinzation/polarination-webapp/pages/about.vue",
     "chunkName": "pages/about",
-    "_name": "_99baf38e"
+    "_name": "_2bf91928"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/david/Projects/polarination/polarination-webapp/pages/index.vue",
+    "component": "/Users/david/Projects/polarinzation/polarination-webapp/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_5a4b3e04"
+    "_name": "_4bb0f3ed"
   }
 ]
