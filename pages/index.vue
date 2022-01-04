@@ -2,7 +2,7 @@
   <div>
     <div v-if="articles">
       <compare-articles v-for="(articleLeft, index) in left" 
-        :article-left="left[index]" :article-right="right[index]" :key="articleLeft.url" />  
+        :article-left="left[index]" :article-right="right[index]" :key="'compare-article-' + index" />  
     </div>
   </div>
 </template>
