@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="background-color: #FFF; padding: 15px; border-radius: 5px;">
         <div class="article-headline">
             <a :href="article.url" target="_blank">{{article.title}}</a>
         </div>

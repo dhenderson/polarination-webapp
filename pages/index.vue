@@ -1,44 +1,23 @@
 <template>
   <div>
-    <template v-if="screenWidth < 770">
-      <b-tabs position="is-centered" class="block">
-        <b-tab-item label="🐴 Left" class="background-color-left">
-
-          <div class="box background-color-left">
-            <ArticleIdeology ideology="left" :articles="left" />
-          </div>
-
-        </b-tab-item>
-        <b-tab-item label="Right 🐘">
-
-          <div class="box background-color-right">
-            <ArticleIdeology ideology="right" :articles="right" />
-          </div>
-
-        </b-tab-item>
-      </b-tabs>
-    </template>
-    <div class="columns" v-else>
-      <div class="column box background-color-left">
-        <ArticleIdeology ideology="left" :articles="left" />
-      </div>
-      <div class="column box background-color-right">
-        <ArticleIdeology ideology="right" :articles="right" />
-      </div>
+    <div v-if="articles">
+      <compare-articles v-for="(articleLeft, index) in left" 
+        :article-left="left[index]" :article-right="right[index]" :key="articleLeft.url" />  
     </div>
   </div>
 </template>
 <script>
-import ArticleIdeology from "~/components/ArticleIdeology.vue"
+import CompareArticles from "~/components/CompareArticles.vue"
 
 export default {
   components: {
-    ArticleIdeology
+    CompareArticles
   },
   data () {
     return {
       left: null,
       right: null,
+      articles: null,
       screenWidth: null
     }
   },
@@ -49,6 +28,7 @@ export default {
         .then(response => {
           this.left = response.data.left.articles
           this.right = response.data.right.articles
+          this.articles = response.data
         })
     }
   },

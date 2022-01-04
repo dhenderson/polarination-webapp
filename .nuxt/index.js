@@ -11,10 +11,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_4c98db0a from 'nuxt_plugin_plugin_4c98db0a' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_axios_3ccd43de from 'nuxt_plugin_axios_3ccd43de' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_buefy_b90f453c from 'nuxt_plugin_buefy_b90f453c' // Source: ./buefy.js (mode: 'all')
-import nuxt_plugin_googleanalytics_66133575 from 'nuxt_plugin_googleanalytics_66133575' // Source: ./google-analytics.js (mode: 'client')
+import nuxt_plugin_plugin_45cd0533 from 'nuxt_plugin_plugin_45cd0533' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_axios_1001b66e from 'nuxt_plugin_axios_1001b66e' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_buefy_8c43b7cc from 'nuxt_plugin_buefy_8c43b7cc' // Source: ./buefy.js (mode: 'all')
+import nuxt_plugin_googleanalytics_87b6e886 from 'nuxt_plugin_googleanalytics_87b6e886' // Source: ./google-analytics.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -167,20 +167,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_4c98db0a === 'function') {
-    await nuxt_plugin_plugin_4c98db0a(app.context, inject)
+  if (typeof nuxt_plugin_plugin_45cd0533 === 'function') {
+    await nuxt_plugin_plugin_45cd0533(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_3ccd43de === 'function') {
-    await nuxt_plugin_axios_3ccd43de(app.context, inject)
+  if (typeof nuxt_plugin_axios_1001b66e === 'function') {
+    await nuxt_plugin_axios_1001b66e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_buefy_b90f453c === 'function') {
-    await nuxt_plugin_buefy_b90f453c(app.context, inject)
+  if (typeof nuxt_plugin_buefy_8c43b7cc === 'function') {
+    await nuxt_plugin_buefy_8c43b7cc(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_googleanalytics_66133575 === 'function') {
-    await nuxt_plugin_googleanalytics_66133575(app.context, inject)
+  if (process.client && typeof nuxt_plugin_googleanalytics_87b6e886 === 'function') {
+    await nuxt_plugin_googleanalytics_87b6e886(app.context, inject)
   }
 
   // Lock enablePreview in context
