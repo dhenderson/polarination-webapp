@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color: #FFF; padding: 15px; border-radius: 5px;">
+    <div>
         <div class="article-headline">
             <a :href="article.url" target="_blank">{{article.title}}</a>
         </div>
@@ -16,6 +16,10 @@ export default {
         article: {
             type: Object,
             required: true
+        },
+        left: {
+            type: Boolean,
+            default: true
         }
     },
     methods: {

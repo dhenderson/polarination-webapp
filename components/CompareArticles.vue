@@ -1,16 +1,16 @@
 <template>
-    <div class="columns" style="margin-bottom: 50px;">
-        <div class="column" style="background-color: #172556; padding-bottom: 25px;">
-            <figure class="image is-32x32 news-source-logo-container" style="margin: 0px auto;">
-                <img class="is-rounded" src="~/assets/images/cnn.png" style="position: relative; top: 10px;"/>
+    <div class="columns box" style="margin-bottom: 50px; padding: 15px;">
+        <div class="column">
+            <figure class="image is-32x32 news-source-logo-container" style="margin: 0px auto; margin-bottom: 15px;">
+                <img class="is-rounded" src="~/assets/images/cnn.png"/>
             </figure> 
-            <Article :key="articleLeft.url" :article="articleLeft" />
+            <Article :key="articleLeft.url" :article="articleLeft" :left="true"/>
         </div>
-        <div class="column" style="background-color: #c61e15; padding-bottom: 25px;">
-            <figure class="image is-32x32 news-source-logo-container" style="margin: 0px auto;">
-                <img class="is-rounded" src="~/assets/images/fox_news.png" style="position: relative; top: 10px;"/>
+        <div class="column">
+            <figure class="image is-32x32 news-source-logo-container" style="margin: 0px auto; margin-bottom: 15px;">
+                <img class="is-rounded" src="~/assets/images/fox_news.png" />
             </figure>
-            <Article :key="articleRight.url" :article="articleRight" />
+            <Article :key="articleRight.url" :article="articleRight" :left="false" />
         </div>
     </div>
 </template>
